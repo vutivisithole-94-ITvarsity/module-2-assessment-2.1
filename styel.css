@@ -1,0 +1,229 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+
+
+}
+    
+
+#header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 15px;
+    background-repeat: repeat-x;
+    background-color: white;
+    background-size: auto;
+
+}
+
+#header img{
+    margin: auto;
+    background-color: white;
+    background-size: auto;
+}
+
+#tabs-top{
+    position: fixed;
+    top     : 60px;
+    left    : 0;
+    z-index : 100;
+    width   : 100%;
+    height  : 40px;
+    background-image: url(images/sky.jpg);
+}
+
+#tabs-top a{
+    float   : left;
+    display : block;
+    width   : 16%;
+    height  :35px;
+    font-weight : 700;
+    color       : white;
+    text-align  : center;
+    text-decoration : none;
+    padding-top     : 12px;  
+}
+
+#main-home{
+      margin-top: 95px
+}
+
+#tabs-bottom{
+      position : fixed;
+      bottom   : 0;
+      left     : 0;
+      z-index  : 500;
+      width    : 100%;
+      height   : 40px;
+      background-image: url(images/sky.jpg)
+}
+
+#tabs-bottom a{
+     float : left;
+     display : block;
+     width : 50%;
+     height : 15px;
+     font-weight : 700;
+     color       : white;
+     text-align  : center;
+     text-decoration : none;
+     padding-top     : 10px;
+}
+
+#main{
+    margin-top: 100px;
+    background: url('images/mall2-inside.jpg') ;
+    background-repeat: repeat-y;
+    margin-bottom: 40px;
+}
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+a.info-box{
+      text-decoration : none;
+      width           : 90%;
+      height          : 90px;
+      display         : block;
+      margin          : auto;
+      margin-top      : 12px;
+      padding         : 1px;
+      background-color: rgba(245 , 245, 245, .8);
+}
+
+.info-box img{
+      height : 70px;
+      margin : 10px;
+      float  : left;
+}
+
+.info-box h3{
+      padding : 0;
+      margin-bottom :0;
+      width : 90%;
+      color : #572800;
+}
+
+.info-box p{
+      margin  : 0;
+      padding : 0;
+      width   : 90%;
+      color   : #131313;
+}
+
+.info-box img.right{
+      float      : right;
+      margin-top : 25px;
+      height     : 40px; 
+}
+
+
+#info-box-full{
+      background-color : rgba(255, 255, 255, .8) ;
+      width   : 90%;
+      display : block;
+      margin  : auto;
+      margin-top : 12px;
+      padding    : 10px;
+}
+
+
+#info-box-full img{
+      width : 100%;
+      height: 230px;
+}
+
+
+
+#info-box-full h3{
+      text-align : center;
+}
+
+.top-img{
+    width: 100%;
+    height: 24px;
+    margin: auto;
+    
+}
+
+table{
+
+}
+.box{
+    height: auto;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+}
+
+.container{
+    widows: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+td{
+    border-top: 1px solid#131313;
+}
+input{
+    width: 100%;
+    height: 25px;
+    margin : 12px 0;
+    border : 1px solid #929292;
+}
+
+textarea{
+    width: 100%;
+    height :25px;
+    margin : 12px 0;
+    border : 1px solid #929292;
+}
+
+.button{
+    display : block;
+    background-color: azure;
+    text-decoration : none;
+    text-align  : center;
+    color       : white;
+    font-size   : 16px;
+    font-weight : 600;
+    margin : 12px 0;
+    padding : 8px 0;
+}
+
+input{
+      width: 100%;
+      height: 25px;
+      margin : 12px 0;
+      border : 1px solid #929292;
+}
+
+textarea{
+      width: 100%;
+      height :25px;
+      margin : 12px 0;
+      border : 1px solid #929292;
+}
+
+.button{
+      display : block;
+      background-color: blueviolet;
+      text-decoration : none;
+      text-align  : center;
+      color       : white;
+      font-size   : 16px;
+      font-weight : 600;
+      margin : 12px 0;
+      padding : 8px 0;
+      background-clip: content-box;
+      padding-left: 470px;
+      padding-right: 470px;
+}
+

@@ -1,0 +1,2701 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="91752109-000f-4706-9877-1d5b4ffdbae4" type="text/javascript" async></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+    {'gtm.start': new Date().getTime(),event:'gtm.js'}
+    );var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKS47LT');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"391086c756",applicationID:"278981221"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta property="og:title" content="Capital One Café" />
+<link rel="canonical" href="https://www.mallofamerica.com/rewards" />
+<meta property="og:image" content="https://www.mallofamerica.com//sites/default/files/2017-10/hours-hero-first_card.jpg" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="The Capital One Café is a place where you can get some banking done and enjoy your favorite  Peet’s® handcrafted beverage. Grab cash, make deposits and use self-service banking at our ATMs. Friendly Ambassadors are on hand to answer your money questions or open an account. Everyone’s welcome." />
+<meta property="og:image" content="https://moaapi.net/sites/default/files/2021-04/Capital%20One%20Cafe%20Hero%20Image%202021.jpg" />
+<meta property="twitter:description" content="Hey, check out Capital+One+Caf%C3%A9 at @mallofamerica! #MOA http://mallofamerica.com/directory/CapitalOneCafe" />
+<link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.mallofamerica.com/rewards" />
+<link rel="revision" href="https://www.mallofamerica.com/rewards" />
+
+  <title>Rewards | Mall of America®</title>
+
+  <link rel="stylesheet" media="all" href="/sites/default/files/css/css_H-Kv6PNxxtfEGQ65eU-EypsGlrN8b3SOK8S24Ky4xQ4.css?qy1np4" />
+<link rel="stylesheet" media="all" href="/themes/custom/moa/dist/css/library.min.css?qy1np4" />
+<link rel="stylesheet" media="all" href="/themes/custom/moa/dist/css/style.min.css?qy1np4" />
+
+  
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+
+    
+  <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/moa/images/favicons/apple-touch-icon.png?v=A0eEA8bX2R">
+  <link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/moa/images/favicons/favicon-32x32.png?v=A0eEA8bX2R">
+  <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/moa/images/favicons/favicon-16x16.png?v=A0eEA8bX2R">
+  <link rel="manifest" href="/themes/custom/moa/images/favicons/manifest.json?v=A0eEA8bX2R">
+  <link rel="mask-icon" href="/themes/custom/moa/images/favicons/safari-pinned-tab.svg?v=A0eEA8bX2R" color="#00a7d1">
+  <link rel="shortcut icon" href="/themes/custom/moa/images/favicons/favicon.ico?v=A0eEA8bX2R">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/themes/custom/moa/images/favicons/mstile-144x144.png?v=A0eEA8bX2R">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  </head>
+  <body class="layout-no-sidebars path-node page-node-type-page" data-current-url="https://www.mallofamerica.com/rewards">
+  
+  <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKS47LT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- STAR TRIBUNE AUDIENCE ANALYTICS TAG -->
+    <script type="text/javascript">
+      var utag_data = {
+        sizmek_activity_id : "", // 
+        sizmek_tag_id : "", // Sizmek Tag ID (TID)
+        page_name : "", // Contains a user-friendly name for the page.
+        page_section : "", // Contains a user-friendly page section, e.g. 'configuration section'.
+        page_category : "", // Contains a user-friendly page category, e.g. 'appliance page'.
+        page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+        page_type : "", // Contains a user-friendly page type, e.g. 'cart page'.
+        search_term : "", // Contains the search term or query submitted by a visitor.
+        search_results : "", // Contains the number of results returned with a search query.
+        search_type : "", // Contains the type of search conducted by the visitor.
+        parent_title : "", // Title of parent window
+        parent_domain : "", // Domain of parent window
+        parent_pathname : "", // Pathname of parent window
+        parent_url : "", // URL of parent window
+        parent_referrer : "", // Referrer of parent window
+        sizmek_cn : "", // Sizmek CN
+        sizmek_tag_type : "", // Sizmek Tag Type
+        sizmek_tval : "", // Sizmek TVAL
+        doubleclick_id : "", // Doubleclick Type
+        doubleclick_type : "", // 
+        doubleclick_category : "", // 
+        google_tracking_id : "", // 
+        google_tracker_name : "" // Google Tracker Name
+      }
+    </script>
+    <!-- Loading script asynchronously -->
+    <script type="text/javascript">
+        (function(a,b,c,d){
+        a='//tags.tiqcdn.com/utag/advantagepublisherservices/aps/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+        })();
+    </script>
+  <!-- CLOSE: STAR TRIBUNE AUDIENCE ANALYTICS TAG -->
+
+  
+
+        <div id="skip-links">
+      <a href="#main-content" class="visually-hidden focusable skip-link">
+        Skip to main content
+      </a>
+      <a href="#menu__primary" class="visually-hidden focusable skip-link display--none--for-mobile--desk-break">
+        Skip to navigation
+      </a>
+      <a href="#menu__nav--mobile-bar" class="visually-hidden focusable skip-link display--none--for-desktop--desk-break">
+        Skip to navigation
+      </a>
+      <a href="/site-map" class="visually-hidden focusable skip-link">
+        Skip to sitemap
+      </a>
+  </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container site__wrapper">
+
+  		
+		
+
+
+<header id="header" class="clearfix smaller" role="banner">
+	<div class="hours-login-header">
+		<div id="blank__placeholder"></div>
+		<div id="menu__search" class="menu__search" aria-label="MOA Site Search" role="region" aria-expanded="false" aria-labelledby="accessible-megamenu-search">
+			<form id="form__search" class="form__search form form-no-label">
+	<i class="moa-search"></i>
+	<div class="form-item form-item--search js-form-type-textfield">
+		<label for="form__item--search">Search</label>
+		<input type="text" id="form__item--search" name="form__search" placeholder="What are you looking for?" class="form-text" />
+	</div>
+	<div class="form__item form__clear-input">
+		<a id="form__item--search--clear" class="form__clear-input--trigger disable--trigger" href="#" data-target="#menu__search" tabindex="0" aria-label="Cancel Search">
+			
+			<!--<span class="display--none--for-mobile">CANCEL</span>-->
+			<span class="display--none--for-desktop"><i class="moa-close"></i></span>
+		</a>
+	</div>
+</form>		</div>
+		<div id="right-header-wrap"> 
+			<!-- search -->
+			<div class="menu__search--global display--none--for-desktop--desk-break">
+				<a class="active--trigger menu__link--color-yellow" id="accessible-megamenu-search" href="javascript:void(0)" data-target="#menu__search" aria-label="Site Search" aria-controls="menu__search" aria-expanded="false"><span><i class="moa-search right" aria-hidden="true"></i></span></a>
+			</div>
+			
+			<!-- hours -->
+			<div class="day__hours active display--none--for-desktop--desk-break" data-tab="tab-2">
+				<div class="day__hours--details">
+					<div class="mall_hours">
+						<div class="day__hours--details-status"></div>
+						<div class="day__hours--details-hours"></div>
+						<div class="day__hours--details-extended-dining" style="display:none !important"><a href="/food-drink/all?filter=14619">Extended Dining Hours</a></div>
+					</div>
+				</div>
+			</div>
+		<!--Guest Login -->
+			<div id="menu__login" class="display--none--for-mobile--desk-break">
+				<div class="menu__login_account">
+					<a id="menu__login_account" class="hide">My Account</a>
+					<a id="menu__login_signin">Guest Login</a>
+				</div>
+				<div id="menu__login_dropdown" class="menu__login_dropdown hide">
+					<div id="megamenu-carrot"></div>
+					<a id="menu__login_profile" href="/profile">Edit Profile</a>
+					<a id="menu__login_itin" href="/profile/itineraries">Itineraries</a>
+					<a id="menu__login_favs" href="/profile/favorites">Favorites</a>
+					<span id="menu__login_signout" style="cursor: pointer;" >Sign Out</span>
+				</div>
+			</div>
+		<!-- languages -->
+			<div id="menu__languages" class="menu__languages--desktop link-languages accessible-megamenu-top-nav-item">
+				<a href="#" id="accessible-megamenu-languages" class="menu__link--color-off-black" aria-label="Select Language" aria-controls="megamenu-languages" aria-expanded="false">
+					<span id="menu__languages--current-desk" class="display--none--for-mobile--desk-break">EN</span>
+				</a>
+									  <div>
+    <div id="block-languages">
+  
+    
+      
+
+   	
+ 	 		 		 		 			<ul class="menu--parent menu" data-menu-lvl="0">
+ 		 			
+ 		 		 		 			
+ 			 							 			 			 						
+													
+ 			<li class="link-english">
+
+ 				 					
+ 						 							 													
+ 						 													<a href="/" >
+ 								<span class="display--none--for-mobile--desk-break">en</span>
+ 								<span class="display--none--for-desktop--desk-break">English</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 							 			 			 						
+													
+ 			<li class="link-francais">
+
+ 				 					
+ 						 							 													
+ 						 													<a href="/fr" >
+ 								<span class="display--none--for-mobile--desk-break">fr</span>
+ 								<span class="display--none--for-desktop--desk-break">Français</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 							 			 			 						
+													
+ 			<li class="link-espanol">
+
+ 				 					
+ 						 							 													
+ 						 													<a href="/es" >
+ 								<span class="display--none--for-mobile--desk-break">es</span>
+ 								<span class="display--none--for-desktop--desk-break">Español</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 							 			 			 						
+													
+ 			<li class="link-portugues">
+
+ 				 					
+ 						 							 													
+ 						 													<a href="/pt" >
+ 								<span class="display--none--for-mobile--desk-break">pt</span>
+ 								<span class="display--none--for-desktop--desk-break">Português</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 							 			 			 						
+													
+ 			<li class="link-deutsch">
+
+ 				 					
+ 						 							 													
+ 						 													<a href="/de" >
+ 								<span class="display--none--for-mobile--desk-break">de</span>
+ 								<span class="display--none--for-desktop--desk-break">Deutsch</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 							 			 			 						
+													
+ 			<li class="link-ribenyu">
+
+ 				 					
+ 						 							 													
+ 						 													<a href="/ja" >
+ 								<span class="display--none--for-mobile--desk-break">日本語</span>
+ 								<span class="display--none--for-desktop--desk-break">日本語</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 							 			 			 						
+													
+ 			<li class="link-zhongwen">
+
+ 				 					
+ 						 							 													
+ 						 													<a href="/zh" >
+ 								<span class="display--none--for-mobile--desk-break">中文</span>
+ 								<span class="display--none--for-desktop--desk-break">中文</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 							 			 			 										 			
+													
+ 			<li class="link-hangugeo  한국어">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="https://mallofamerica.com/kr"  data-teaser="한국어">
+ 								<span>한국어</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 							 			 			 						
+													
+ 			<li class="link-italiana">
+
+ 				 					
+ 						 							 													
+ 						 													<a href="/it" >
+ 								<span class="display--none--for-mobile--desk-break">it</span>
+ 								<span class="display--none--for-desktop--desk-break">Italiana</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+
+ 
+  </div>
+
+  </div>
+
+							</div>
+		</div>
+	</div>
+
+	<a href="/" aria-label="Mall of America Logo" tabindex="0">
+		<div class="menu__logo"></div>
+	</a>
+
+		
+	<nav class="menu__header header__links" role="navigation">
+
+
+				<div id="menu__nav--mobile-bar" class="menu__nav--mobile">
+			<ul>
+				<li id="menu__mobile-trigger">
+					<a id="accessible-megamenu-mobile" href="javascript:void(0)" data-target="#menu__primary" aria-label="Click to open main menu" aria-controls="menu__primary" aria-expanded="false"><i class="moa-bars" aria-hidden="true"></i></a>
+				</li>
+			</ul>
+		</div>
+
+				<div id="menu__primary" class="menu__nav primary">
+							  <div class="region-primary-nav">
+    <div id="block-newmainmenu">
+  
+    
+      
+
+   	
+ 	 		 		 		 			<ul class="menu--parent menu" data-menu-lvl="0">
+ 		 			
+ 		 		 		 			
+ 							 			 							 			 			 						
+													
+ 			<li class="link-shopping-new  link__has-children ">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="/shopping"  data-teaser="Shopping">
+ 								<span>Shopping</span>
+ 							</a>
+ 						
+					 					 								
+				 				 					<div id="megamenu-shopping-new" class="megamenu megamenu-0" aria-label="Shopping MegaMenu">
+ 						<div class="grid">
+							<div id="megamenu-carrot"></div>
+
+	 						
+								 								 						 	
+ 	 		 		 		 			<ol class="menu--sub menu" data-menu-lvl="1">
+ 		 			
+ 		 		 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-shopping-new-menu  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/shopping"  class="link__sub-item"  data-teaser="">
+								<span>Shopping</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-directory-map-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/directory"  class="link__sub-item"  data-teaser="">
+								<span>Directory + Map</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-shop-moa-online  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://shop.mallofamerica.com/"  class="link__sub-item"  data-teaser="">
+								<span>Shop MOA Online</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-shopping-deals-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/shopping/deals"  class="link__sub-item"  data-teaser="">
+								<span>Shopping Deals</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-new-opening-soon  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/shopping/new"  class="link__sub-item"  data-teaser="">
+								<span>New + Opening Soon</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-gift-cards-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/giftcard"  class="link__sub-item"  data-teaser="">
+								<span>Gift Cards</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-coupon-books-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/concierge#Coupons"  class="link__sub-item"  data-teaser="">
+								<span>Coupon Books</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			
+ 							 			 			 							 			 						
+													
+ 			<li class="link-services-new  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/services"  class="link__sub-item"  data-teaser="">
+								<span>Shopping Services</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+																													 						
+ 			<li class="link-curbside-pickup-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://www.mallofamerica.com/curbside"  class="link__sub-item"  data-teaser="">
+								<span>Curbside Pickup</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																													 						
+ 			<li class="link-livestream-shopping-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/Shoplive"  class="link__sub-item"  data-teaser="">
+								<span>Livestream Shopping</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-personal-styling-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://www.mallofamerica.com/personalstyling"  class="link__sub-item"  data-teaser="">
+								<span>Personal Styling</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-online-returns  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://www.mallofamerica.com/narvar"  class="link__sub-item"  data-teaser="">
+								<span>Online Returns</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			
+ 							 			 			 							 			 						
+													
+ 			<li class="link-promotions  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					 						<span>Promotions</span>
+ 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-spring-2021  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/summer"  class="link__sub-item"  data-teaser="">
+								<span>Summer 2021</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			</ol>
+	 
+	 							 						 						</div>  					</div>  				
+ 			</li>
+ 		 			
+ 							 			 							 			 			 						
+													
+ 			<li class="link-entertainment-new-menu  link__has-children ">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="/entertainment"  data-teaser="Entertainment">
+ 								<span>Entertainment</span>
+ 							</a>
+ 						
+					 					 								
+				 				 					<div id="megamenu-entertainment-new-menu" class="megamenu megamenu-0" aria-label="Entertainment MegaMenu">
+ 						<div class="grid">
+							<div id="megamenu-carrot"></div>
+
+	 						
+								 								 						 	
+ 	 		 		 		 			<ol class="menu--sub menu" data-menu-lvl="1">
+ 		 			
+ 		 		 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-attractions-new  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/entertainment/attractions"  class="link__sub-item"  data-teaser="">
+								<span>Attractions</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-all-attractions  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/entertainment/attractions"  class="link__sub-item"  data-teaser="">
+								<span>All Attractions</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-nickelodeon-universe-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/directory/nickelodeon-universe"  class="link__sub-item"  data-teaser="">
+								<span>Nickelodeon Universe®</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-m-m-s-r-  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://www.mallofamerica.com/directory/M-and-Ms"  class="link__sub-item"  data-teaser="">
+								<span>M&M's®</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-b-b-theatres  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://www.mallofamerica.com/directory/27777"  class="link__sub-item"  data-teaser="">
+								<span>B&B Theatres</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-sea-life-aquarium  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/directory/sea-life-minnesota-aquarium"  class="link__sub-item"  data-teaser="">
+								<span>Sea Life Aquarium</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-crayola-experience  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://www.mallofamerica.com/directory/crayola-experience"  class="link__sub-item"  data-teaser="">
+								<span>Crayola Experience</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-flyover-america-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/directory/flyover-america"  class="link__sub-item"  data-teaser="">
+								<span>Flyover America</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-events-new  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/entertainment/events"  class="link__sub-item"  data-teaser="">
+								<span>Events</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-all-events-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/entertainment/events/all"  class="link__sub-item"  data-teaser="">
+								<span>All Events</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-toddler-tuesday  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/toddlertuesdays"  class="link__sub-item"  data-teaser="">
+								<span>Toddler Tuesdays</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-music-in-the-mall-application  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/mitm"  class="link__sub-item"  data-teaser="">
+								<span>Music in the Mall</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			</ol>
+	 
+	 							 						 						</div>  					</div>  				
+ 			</li>
+ 		 			
+ 							 			 							 			 			 						
+													
+ 			<li class="link-food-drink-new  link__has-children ">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="/node/28"  data-teaser="Food + Drink">
+ 								<span>Food + Drink</span>
+ 							</a>
+ 						
+					 					 								
+				 				 					<div id="megamenu-food-drink-new" class="megamenu megamenu-0" aria-label="Food + Drink MegaMenu">
+ 						<div class="grid">
+							<div id="megamenu-carrot"></div>
+
+	 						
+								 								 						 	
+ 	 		 		 		 			<ol class="menu--sub menu" data-menu-lvl="1">
+ 		 			
+ 		 		 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-food-drink-new-menu  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/node/28"  class="link__sub-item"  data-teaser="">
+								<span>Food & Drink</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-dining-guide  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/node/25053"  class="link__sub-item"  data-teaser="">
+								<span>Dining Guide</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-takeout  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/OpenDining"  class="link__sub-item"  data-teaser="">
+								<span>Takeout</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																													 						
+ 			<li class="link-online-ordering-delivery-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/OrderOnline"  class="link__sub-item"  data-teaser="">
+								<span>Online Ordering/Delivery</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																													 						
+ 			<li class="link-curbside-pickup-new-menu  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/curbside"  class="link__sub-item"  data-teaser="">
+								<span>Curbside Pickup</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-happy-hours-specials  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/food-drink/happy-hour-specials"  class="link__sub-item"  data-teaser="">
+								<span>Happy Hours/Specials</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			</ol>
+	 
+	 							 						 						</div>  					</div>  				
+ 			</li>
+ 		 			
+ 							 			 							 			 			 						
+													
+ 			<li class="link-visit  link__has-children ">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="/plan-your-trip"  data-teaser="Visit">
+ 								<span>Visit</span>
+ 							</a>
+ 						
+					 					 								
+				 				 					<div id="megamenu-visit" class="megamenu megamenu-0" aria-label="Visit MegaMenu">
+ 						<div class="grid">
+							<div id="megamenu-carrot"></div>
+
+	 						
+								 								 						 	
+ 	 		 		 		 			<ol class="menu--sub menu" data-menu-lvl="1">
+ 		 			
+ 		 		 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-plan-your-trip-new  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/plan-your-trip"  class="link__sub-item"  data-teaser="">
+								<span>Plan Your Trip</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-hours-directions  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/plan-your-trip/hours-directions"  class="link__sub-item"  data-teaser="">
+								<span>Hours + Directions</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-book-your-hotel  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://reservations.mallofamerica.com/site/welcome/14709/mall-of-america-preferred-hotels-special-packages-rates" target=_blank class="link__sub-item"  data-teaser="">
+								<span>Book Your Hotel</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-hotels-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/plan-your-trip/hotels"  class="link__sub-item"  data-teaser="">
+								<span>Hotel Partners</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-packages-offers-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/plan-your-trip/packages-offers"  class="link__sub-item"  data-teaser="">
+								<span>Packages + Offers</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-transportation-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/plan-your-trip/transportation"  class="link__sub-item"  data-teaser="">
+								<span>Transportation</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-meetings-events-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/visit/meetings-events"  class="link__sub-item"  data-teaser="">
+								<span>Meetings + Events</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-group-experiences-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://www.mallofamerica.com/groups"  class="link__sub-item"  data-teaser="">
+								<span>Group Experiences</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-accessibility-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/plan-your-trip/accessibility"  class="link__sub-item"  data-teaser="">
+								<span>Accessibility</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-area-attractions-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/plan-your-trip/area-attractions"  class="link__sub-item"  data-teaser="">
+								<span>Area Attractions</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-about-new  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/about"  class="link__sub-item"  data-teaser="">
+								<span>About</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-community-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/community"  class="link__sub-item"  data-teaser="">
+								<span>Community</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-donations  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/community/donation_application"  class="link__sub-item"  data-teaser="">
+								<span>Donations</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-press-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/press"  class="link__sub-item"  data-teaser="">
+								<span>Press</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-careers-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/employment"  class="link__sub-item"  data-teaser="">
+								<span>Careers</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-contact-us-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/contact-us"  class="link__sub-item"  data-teaser="">
+								<span>Contact Us</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-commitment-to-green-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/green"  class="link__sub-item"  data-teaser="">
+								<span>Commitment to Green</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			</ol>
+	 
+	 							 						 						</div>  					</div>  				
+ 			</li>
+ 		 			
+ 							 			 							 			 			 						
+													
+ 			<li class="link-services-new-menu  link__has-children ">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="/services"  data-teaser="Services">
+ 								<span>Services</span>
+ 							</a>
+ 						
+					 					 								
+				 				 					<div id="megamenu-services-new-menu" class="megamenu megamenu-0" aria-label="Services MegaMenu">
+ 						<div class="grid">
+							<div id="megamenu-carrot"></div>
+
+	 						
+								 								 						 	
+ 	 		 		 		 			<ol class="menu--sub menu" data-menu-lvl="1">
+ 		 			
+ 		 		 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-family-amenities-new  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/FamilyAmenities"  class="link__sub-item"  data-teaser="">
+								<span>Family Amenities</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+													
+ 			<li class="link-learning-resources-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://www.mallofamerica.com/learningresources"  class="link__sub-item"  data-teaser="">
+								<span>Learning Resources</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-family-restrooms-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/FamilyAmenities#Family"  class="link__sub-item"  data-teaser="">
+								<span>Family Restrooms</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-mother-s-room-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/FamilyAmenities#Mothers"  class="link__sub-item"  data-teaser="">
+								<span>Mother's Room</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-storage-lockers-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/FamilyAmenities#Lockers"  class="link__sub-item"  data-teaser="">
+								<span>Storage Lockers</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-concierge-new  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/concierge"  class="link__sub-item"  data-teaser="">
+								<span>Concierge</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-lost-found-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/concierge#Lost_Found"  class="link__sub-item"  data-teaser="">
+								<span>Lost + Found</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-strollers-wheelchairs  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/concierge#Strollers_Wheelchairs"  class="link__sub-item"  data-teaser="">
+								<span>Strollers + Wheelchairs</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-amazon-lockers  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/concierge#Lockers"  class="link__sub-item"  data-teaser="">
+								<span>Amazon Lockers</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			
+ 							 			 			 							 			 						
+																				 						
+ 			<li class="link-car-amenities  link__has-children  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/CarServices_Parking"  class="link__sub-item"  data-teaser="">
+								<span>Car Amenities</span>
+							</a>
+						
+					 					 								
+				 				
+								 								 						 	
+ 	 		 		 		 			<ul class="menu--sub menu" data-menu-lvl="2">
+ 		 			
+ 		 		 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-parking-new  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/parking"  class="link__sub-item"  data-teaser="">
+								<span>Parking</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-valet-car-services  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="http://mallofamerica.com/CarServices_Parking#Valet"  class="link__sub-item"  data-teaser="">
+								<span>Valet + Car Services</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 			 							 						
+																				 						
+ 			<li class="link-lyft  menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="https://mallofamerica.com/plan-your-trip/transportation"  class="link__sub-item"  data-teaser="">
+								<span>Lyft</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+	 							 						
+ 			</li>
+ 		 			</ol>
+	 
+	 							 						 						</div>  					</div>  				
+ 			</li>
+ 		 			
+ 			 							 			 			 										 			
+													
+ 			<li class="link-directory  display--none--for-desktop--desk-break nav__link--directory">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="/directory"  data-teaser="Directory">
+ 								<span>Directory</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 							 			 							 			 			 						
+																				 						
+ 			<li class="link-my-account  link__has-children ">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="/profile"  data-teaser="My Account">
+ 								<span>My Account</span>
+ 							</a>
+ 						
+					 					 								
+				 				 					<div id="megamenu-my-account" class="megamenu megamenu-0" aria-label="My Account MegaMenu">
+ 						<div class="grid">
+							<div id="megamenu-carrot"></div>
+
+	 						
+								 								 						 	
+ 	 		 		 		 			<ol class="menu--sub menu" data-menu-lvl="1">
+ 		 			
+ 		 		 		 			
+ 			 			 							 			 						
+													
+ 			<li class="link-edit-profile  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/profile"  class="link__sub-item"  data-teaser="">
+								<span>Edit Profile</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 							 			 						
+													
+ 			<li class="link-favorites  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/profile/favorites"  class="link__sub-item"  data-teaser="">
+								<span>Favorites</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 							 			 						
+													
+ 			<li class="link-itineraries  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/profile/itineraries"  class="link__sub-item"  data-teaser="">
+								<span>Itineraries</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			
+ 			 			 							 			 						
+													
+ 			<li class="link-sign-out  accessible-megamenu-panel-group menu__link--feat-content ">
+
+ 				 					
+ 						 							 													
+ 						 							 						<a href="/"  class="link__sub-item"  data-teaser="">
+								<span>Sign Out</span>
+							</a>
+						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ol>
+	 
+	 							 						 						</div>  					</div>  				
+ 			</li>
+ 		 			
+ 			 							 			 			 										 			
+													
+ 			<li class="link-sign-in  nav__link--signin">
+
+ 				 					
+ 						 							 													
+ 						 						 							<a href="/profile"  data-teaser="Sign In">
+ 								<span>Sign In</span>
+ 							</a>
+ 						
+					 					 								
+				 				
+								 							 						
+ 			</li>
+ 		 			</ul>
+	 
+
+ 
+  </div>
+
+  </div>
+
+										  <div class="nav-right">
+    <div id="block-liveeventsblock" class="block-nav-right">
+  
+    
+      <ul class="menu--parent menu online-dropdown" data-menu-lvl="0">
+   <li class="link-online  link__has-children ">
+      <a class="dropdown-header" >
+	  	<span class="">
+	  		<span class="nav-right-title">Happening</span><br/>
+	  		<span class="nav-right-subtitle">NOW</span>
+		</span>
+	  </a>
+      <div id="megamenu-events" class="megamenu megamenu-0" aria-label="MegaMenu">
+         <div class="grid">
+            <div id="megamenu-carrot"></div>
+            <ol class="menu--sub menu" data-menu-lvl="1">
+               <li class="link-test accessible-megamenu-panel-group menu__link--feat-content">
+               	<span class="dropdown-section-header">ONLINE</span>
+	               	<ul>
+							  							    <li>
+							       <a target="_blank" alt="" href="https://www.facebook.com/MallofAmerica/videos/" class="live-event-row">
+
+							       	<div class="live-event-icon-wrap">
+								       									       		<img class="live-event-icon" src="/themes/custom/moa/images/facebook_logo_RGB-Hex-Blue_512.png" />
+								       								       	</div>
+							       	<div class="live-event-details">
+							       		<div class="live-event-title">Facebook Live</div>
+							       									       	</div>
+							       	
+							       								       </a>
+							    </li>               
+							      
+							</ul>
+						<hr />
+						<span class="dropdown-section-header">EVENTS</span>
+						<ul>
+						  						    <li>
+						    <!-- not sure if we will have links ? -->
+						       <a target="_self" alt="view event" href="/events/view/27698" class="live-event-row">
+						       	<div class="live-event-icon-wrap">
+							       								       		<img class="live-event-icon" src="/themes/custom/moa/images/MOA_Logo_No_Registration_Mark.png" />
+							       							       	</div>
+						       	<div class="live-event-details">
+						       		<div class="live-event-title">Kaleidoscope at MOA®</div>
+						       								       			<div class="live-event-subtitle">Now - Thurs, Sep 30 | Mall Hours</div>
+						       								       	</div>
+						       <!--	<div class="live-event-flag">1</div> -->
+						       </a>
+						    </li>        
+						  						    <li>
+						    <!-- not sure if we will have links ? -->
+						       <a target="_self" alt="view event" href="/events/view/27965" class="live-event-row">
+						       	<div class="live-event-icon-wrap">
+							       								       		<img class="live-event-icon" src="/themes/custom/moa/images/MOA_Logo_No_Registration_Mark.png" />
+							       							       	</div>
+						       	<div class="live-event-details">
+						       		<div class="live-event-title">Summer in the Square</div>
+						       								       			<div class="live-event-subtitle">Mon, Jun 21, 2021 &ndash; Mon, Aug 23, 2021</div>
+						       								       	</div>
+						       <!--	<div class="live-event-flag">1</div> -->
+						       </a>
+						    </li>        
+						  						    <li>
+						    <!-- not sure if we will have links ? -->
+						       <a target="_self" alt="view event" href="/events/view/28197" class="live-event-row">
+						       	<div class="live-event-icon-wrap">
+							       								       		<img class="live-event-icon" src="/themes/custom/moa/images/MOA_Logo_No_Registration_Mark.png" />
+							       							       	</div>
+						       	<div class="live-event-details">
+						       		<div class="live-event-title">Summer of Sharks</div>
+						       								       			<div class="live-event-subtitle">Thu, Jul 29, 2021 &ndash; Mon, Sep 6, 2021</div>
+						       								       	</div>
+						       <!--	<div class="live-event-flag">1</div> -->
+						       </a>
+						    </li>        
+						      
+						</ul>
+
+						
+						<div class="">
+							<a class="button button__icon--arrow-right" href="/entertainment/events/all" id="" tabindex="-1">UPCOMING EVENTS</a>
+						</div>
+
+               </li>
+            </ol>
+         </div>
+      </div>
+   </li>
+</ul>
+
+  </div>
+<div id="block-hoursblock" class="block-nav-right">
+  
+    
+      <ul class="menu--parent menu hours-dropdown" data-menu-lvl="0">
+   <li class="link-online  link__has-children ">
+      <a class="dropdown-header">
+	  	<span>
+			<span class="nav-right-title">Today's Hours</span><br/>
+			<span class="nav-right-subtitle">11:00am-9:00pm</span>
+		</span>
+		</a>
+      <div id="megamenu-hours" class="megamenu megamenu-0" aria-label="MegaMenu">
+         <div class="grid">
+            <div id="megamenu-carrot"></div>
+            <ol class="menu--sub menu" data-menu-lvl="1">
+               <li class="link-test accessible-megamenu-panel-group menu__link--feat-content ">
+               		<div class="today-wrap">
+               			<div class="today-inner">
+	               			<span class="today-header">Today</span>
+	               			<span class="today-hours">11:00am-9:00pm</span>
+	               		</div>
+	               		<span class="today-open-flag">Open</span>
+               		</div>
+					<ul class='hours-ul'>
+													<li class="hour-row">
+								<span class="hour-day">Monday</span>
+						<span class="hour-hours"> 11:00am-9:00pm</span>
+							</li>     
+													<li class="hour-row">
+								<span class="hour-day">Tuesday</span>
+						<span class="hour-hours"> 11:00am-9:00pm</span>
+							</li>     
+													<li class="hour-row">
+								<span class="hour-day">Wednesday</span>
+						<span class="hour-hours"> 11:00am-9:00pm</span>
+							</li>     
+													<li class="hour-row">
+								<span class="hour-day">Thursday</span>
+						<span class="hour-hours"> 11:00am-9:00pm</span>
+							</li>     
+													<li class="hour-row">
+								<span class="hour-day">Friday</span>
+						<span class="hour-hours"> 10:00am-9:00pm</span>
+							</li>     
+													<li class="hour-row">
+								<span class="hour-day">Saturday</span>
+						<span class="hour-hours"> 10:00am-9:00pm</span>
+							</li>     
+													<li class="hour-row">
+								<span class="hour-day">Sunday</span>
+						<span class="hour-hours"> 11:00am-7:00pm</span>
+							</li>     
+											</ul>
+					
+					<a class="button button__icon--arrow-right" href="/directory" id="" tabindex="-1">VIEW DIRECTORY</a>
+					<a class="button button__icon--arrow-right" href="https://tix.mallofamerica.com/" id="" target="_blank" tabindex="-1">VIEW ATTRACTION TICKETS</a>
+									
+               </li>
+            </ol>
+         </div>
+      </div>
+   </li>
+</ul>
+
+  </div>
+
+  </div>
+
+					</div>
+
+
+		<div id="parking__attraction--wrapper" style="display:none !important">
+			<a href="/parking" id="available__parking" class="button-link">
+				Available Parking
+			</a>
+			<span id="left-border">
+				<a id="attraction__tickets" href="http://tix.mallofamerica.com" target="_blank">
+					Attraction<br>Tickets
+				</a>
+			</span>
+		</div>
+
+				
+		
+			<div id="menu__search--results" class="menu__search--results megamenu" aria-label="MOA Site Search Results" role="region">
+								<div id="menu__search--results--feed" class="menu__search--results--feed grid__small">
+									</div>
+			</div>
+
+
+								<!-- chat -->
+					
+
+ 	</nav>
+
+		
+	<section class="section__parking">
+		<div id="parking_container" class="include_expand">
+			<div class="parking_info_container">
+				<div class="parking_name">
+					<a href="/parking" class="parking_header">West<br/>Parking Ramp</a><br />
+					<a href="/parking" class="more_info">More Information</a>
+				</div>
+
+				<div class="arrow_container"><img src="/themes/custom/moa/images/parking/MoA-Arrow-Icon.svg" /></div>
+
+				<div id="parking_data_west_header" class="parking_data parking_data_toggle">
+					<img class="car_image" src="/themes/custom/moa/images/parking/MoA-Car-Icon.svg" />
+					<div class="space_container available_message">
+						<span id="westnumheader" class="space_number">
+													0%
+												</span><br />
+						<span class="space_text">Available Spaces</span> <br />
+						<img class="ada_image" src="/themes/custom/moa/images/parking/MoA-ADA-Icon.svg" />
+						<span id="adawestnumheader" class="ada_text">
+													0%
+												</span>
+					</div>
+					<div class="space_container full_message">
+						<span class="full_text">FULL</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="vertical_divider"></div>
+
+			<div class="parking_info_container">
+				<div class="parking_name">
+					<a href="/parking" class="parking_header">East<br/>Parking Ramp</a><br />
+					<a href="/parking" class="more_info">More Information</a>
+				</div>
+
+				<div class="arrow_container"><img src="/themes/custom/moa/images/parking/MoA-Arrow-Icon.svg" /></div>
+
+				<div id="parking_data_east_header" class="parking_data parking_data_toggle">
+					<img class="car_image" src="/themes/custom/moa/images/parking/MoA-Car-Icon.svg" />
+					<div class="space_container available_message">
+						<span id="eastnumheader" class="space_number">
+													0%
+												</span><br />
+						<span class="space_text">Available Spaces</span> <br />
+						<img class="ada_image" src="/themes/custom/moa/images/parking/MoA-ADA-Icon.svg" />
+						<span id="adaeastnumheader" class="ada_text">
+													0%
+												</span>
+					</div>
+					<div class="space_container full_message">
+						<span class="full_text">FULL</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="parking_info_container sub_parking">
+				<div class="parking_name">
+					<a href="/parking" id="north-lot" class="parking_header">North Lot</a><br />
+					<a href="/parking" class="space_text">Parking Available</a>
+				</div>
+				<div class="arrow_container sub_arrow"><img src="/themes/custom/moa/images/parking/MoA-Arrow-Icon.svg" /></div>
+				<div class="parking_data">
+					<img class="car_image small_car_image" src="/themes/custom/moa/images/parking/MoA-Car-Icon.svg" />
+				</div>
+			</div>
+
+			<div class="vertical_divider hidden-spacer"></div>
+
+			<div class="parking_info_container sub_parking">
+				<div class="parking_name">
+					<a href="/parking" id="east-sub-lot" class="parking_header">East Lot<br />82nd St &amp; 24th Ave</a><br />
+					<a href="/parking" class="space_text">Closed</a>
+				</div>
+				<div class="arrow_container sub_arrow"><img src="/themes/custom/moa/images/parking/MoA-Arrow-Icon.svg" /></div>
+				<div class="parking_data">
+					<img class="car_image small_car_image" src="/themes/custom/moa/images/parking/MoA-Car-Icon.svg" />
+				</div>
+			</div>
+
+			
+		</div>
+
+			</section>
+
+	</header>
+
+
+
+  <main id="main-content" role="main" class="main-content">
+  
+    
+    <div class="layout-content">
+        <div>
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-moa-content">
+  
+    
+      <article data-history-node-id="197" role="article" about="/rewards" typeof="schema:WebPage">
+
+  
+      <span property="schema:name" content="Rewards" class="hidden"></span>
+
+
+  
+  <div>
+    
+
+
+			<div>
+											
+			
+<section class="section__image-video  pad--none  bg--white lazy__load" >
+
+			
+	
+			<div class="resource-slider resource-slider__no-slider-nav">
+
+			<div class="background-slider lazy__load--fade">
+																						
+																				<div class="background-slide ">
+						<style>
+        @media screen {
+        #image-back-ground-9500 {
+            background-image: url("https://www.mallofamerica.com/sites/default/files/2021-07/BTS_HaulofAmerica_Web%20Tiles_1920x1080_Rewards.jpg");
+        }
+    }
+
+            @media screen and (min-width: 1366px) {
+            #image-back-ground-9500 {
+                background-image: url("https://www.mallofamerica.com/sites/default/files/2021-07/BTS_HaulofAmerica_Web%20Tiles_1920x1080_Rewards.jpg");
+            }
+        }
+                @media screen and (min-width: 736px) and (max-width: 1366px) {
+            #image-back-ground-9500 {
+                background-image: url("https://www.mallofamerica.com/sites/default/files/2021-07/BTS_HaulofAmerica_Web%20Tiles_1920x1080_Rewards.jpg");
+            }
+        }
+                @media screen and (max-width: 736px) {
+            #image-back-ground-9500 {
+                background-image: url("https://www.mallofamerica.com/sites/default/files/2021-07/BTS_HaulofAmerica_Web%20Tiles_1920x1080_Rewards.jpg");
+            }
+        }
+    </style>
+
+
+
+        
+
+
+
+
+        <div class="mobile-hero"><img src="/sites/default/files/2021-07/BTS_HaulofAmerica_Web%20Tiles_1920x1080_Rewards.jpg" ></div>
+    <div id="image-back-ground-9500" class="full-background full-background--" style=" background-size:; background-position:">
+    </div>
+
+					</div>
+										
+							</div>
+
+			
+		</div> 	 
+</section>
+
+
+
+
+											
+
+
+<section class="section__body-copy bg--white pad--none lazy__load" id="bodyCopy">
+	<div class="grid__small">
+		<div class="section__body-copy--content lazy__load--child">
+
+			<center>
+<h1>Back to School Rewards!</h1>
+</center>
+
+<center>
+<p><spand style="font-size:25px"></spand></p>
+
+<p>We’re making back to school shopping fun for everyone this year with Back to School Rewards. Shop at Mall of America and redeem your receipts for passes to your favorite MOA attractions including Nickelodeon Universe, Moose Mountain Adventure Golf and More! The process is simple, spend $150 at MOA from August 1 – September 6, 2021, and redeem for rewards on us!  </p>
+
+<p>All MOA purchases must be made between August 1 – September 6, 2021, to qualify. Receipts must be uploaded to the Mall of America App.  <br />
+<br />
+<strong>Redemption Periods:</strong><br />
+Nickelodeon Universe Wristband rewards may be redeemed August 23, 2021 – October 17, 2021. All other rewards may be redeemed starting August 1, 2021 – October 17, 2021.<br />
+<br />
+ </p>
+</center>
+
+<div class="cta__content" style="text-align:center; margin-bottom:-11px"><a class="button button__icon--arrow-right" href="https://apps.apple.com/us/app/mall-of-america-official/id1055421962" id="" tabindex="-1">Download on App Store (iOS)</a></div>
+
+<p> </p>
+
+<div class="cta__content" style="text-align:center; margin-bottom:-11px"><a class="button button__icon--arrow-right" href="https://play.google.com/store/apps/details?id=com.moa.mallofamerica&hl=en_US" id="" tabindex="-1">Download on Google Play (Android)</a></div>
+
+<p> </p>
+
+
+		</div>
+	</div>
+</section>
+
+
+											
+
+	<section class="section__featured-content-row bg--white pad--top lazy__load">
+		<div class="grid lazy__load--child">
+										<span class="heading--content-section">Redeem With the Mall of America App</span>
+																				<div class="slick__slider 				 3slides
+							">
+
+																													
+										
+  	 
+	 
+	
+
+
+
+					
+	
+			
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-1 " >
+			<a target="" href="https://mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">Download the Mall of America app and register for a Ziploop Rewards account. image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="Download the Mall of America app and register for a Ziploop Rewards account. image" style="background-image:url( https://moadrupalweb.blob.core.windows.net/moadrupalweb/processed/23971_Holiday%20Rewards_Web%20tiles%20landing_Download-thumbnail.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">Download the Mall of America app and register for a Ziploop Rewards account.</h3>
+					</a>																															</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+			
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-2 " >
+			<a target="" href="https://mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">Snap photos of your receipts while logged into Ziploop. image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="Snap photos of your receipts while logged into Ziploop. image" style="background-image:url( https://moadrupalweb.blob.core.windows.net/moadrupalweb/processed/23972_Holiday%20Rewards_Web%20tiles%20landing_Snap-thumbnail.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">Snap photos of your receipts while logged into Ziploop.</h3>
+					</a>																															</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+			
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-3 " >
+			<a target="" href="https://mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">Upload + Redeem your reward once you spend $150 at Mall of America. image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="Upload + Redeem your reward once you spend $150 at Mall of America. image" style="background-image:url( https://moadrupalweb.blob.core.windows.net/moadrupalweb/processed/23977_Holiday%20Rewards_Web%20tiles%20landing_Upload-thumbnail.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">Upload + Redeem your reward once you spend $150 at Mall of America.</h3>
+					</a>																					<div class="heading--card-description">Upload your receipts until September 6, 2021 11:59 p.m. (App upload only)</div>
+					
+																			</div>
+		</div>
+
+	
+
+									
+			</div> 		</div> 	</section>
+
+
+											
+
+	<section class="section__featured-content-row bg--off-white pad--both lazy__load">
+		<div class="grid lazy__load--child">
+										<span class="heading--content-section">Reward Options</span>
+																				<div class="slick__slider 				 3slides
+							">
+
+																													
+										
+  	 
+	 
+	
+
+
+
+					
+	
+						
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-1 " >
+			<a target="" href="https://www.mallofamerica.com/rewards"><span class="accessible--hidden">One Any Day Unlimited Ride Wristband image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="One Any Day Unlimited Ride Wristband image" style="background-image:url( https://moadrupalweb.blob.core.windows.net/moadrupalweb/processed/23963_Holiday%20Rewards_Web%20tiles%20landing_Nick-thumbnail.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://www.mallofamerica.com/rewards">					<h3 class="heading--card-title dsfeatured-card">One Any Day Unlimited Ride Wristband</h3>
+					</a>																															</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+						
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-2 " >
+			<a target="" href="https://www.mallofamerica.com/rewards"><span class="accessible--hidden">One General Admission Ticket image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="One General Admission Ticket image" style="background-image:url( https://moadrupalweb.blob.core.windows.net/moadrupalweb/processed/23966_Holiday%20Rewards_Web%20tiles%20landing_crayola-thumbnail.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://www.mallofamerica.com/rewards">					<h3 class="heading--card-title dsfeatured-card">One General Admission Ticket</h3>
+					</a>																					<div class="heading--card-description">Limited Quantities Available</div>
+					
+																			</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+						
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-3 " >
+			<a target="" href="https://mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">Two Adult Admission Tickets image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="Two Adult Admission Tickets image" style="background-image:url( https://mallofamerica.com/sites/default/files/2020-11/Moose%20Mountain%201920x1080_3.png );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">Two Adult Admission Tickets</h3>
+					</a>																					<div class="heading--card-description">Limited Quantities Available</div>
+					
+																			</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+						
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-4 " >
+			<a target="" href="https://mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">Two Adult Admission Tickets image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="Two Adult Admission Tickets image" style="background-image:url( https://mallofamerica.com/sites/default/files/2020-11/ROA_1920x1080_1.png );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">Two Adult Admission Tickets</h3>
+					</a>																					<div class="heading--card-description">Limited Quantities Available</div>
+					
+																			</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+						
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-5 " >
+			<a target="" href="https://www.mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">One Free Blue Horse Pizza   image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="One Free Blue Horse Pizza   image" style="background-image:url( https://mallofamerica.com/sites/default/files/2021-04/FairOn4%20WebReady.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://www.mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">One Free Blue Horse Pizza  </h3>
+					</a>																					<div class="heading--card-description">Limited Quantities Available</div>
+					
+																			</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+						
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-6 " >
+			<a target="" href="https://www.mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">One General Admission Ticket   image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="One General Admission Ticket   image" style="background-image:url( https://www.mallofamerica.com/sites/default/files/2021-07/Seal%20Life%20AB%20Logo%202016%20CMYK.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://www.mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">One General Admission Ticket  </h3>
+					</a>																					<div class="heading--card-description">Limited Quantities Available</div>
+					
+																			</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+						
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-7 " >
+			<a target="" href="https://www.mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">One Milkshake – Dine-in Only image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="One Milkshake – Dine-in Only image" style="background-image:url( https://www.mallofamerica.com/sites/default/files/2021-07/Sugar%20Factory%20AB%20Logo%202016%20CMYK_0.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://www.mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">One Milkshake – Dine-in Only</h3>
+					</a>																					<div class="heading--card-description">Limited Quantities Available  </div>
+					
+																			</div>
+		</div>
+
+	
+
+																																		
+										
+  	 
+	 
+	
+
+
+
+					
+	
+						
+				
+				
+
+ 
+
+					
+									
+				
+										
+		
+		<div class="card__tile card__tile--single bg--white  lazy__load--child-8 " >
+			<a target="" href="https://www.mallofamerica.com/holiday/holiday-rewards"><span class="accessible--hidden">Donate your Rewards to our Charity Partner Way To Grow  image</span>
+				<div class="card__tile--image element--bg-cover bg--white dsfeatured-card" role="img" aria-label="Donate your Rewards to our Charity Partner Way To Grow  image" style="background-image:url( https://www.mallofamerica.com/sites/default/files/2021-06/wtg_logo%201_1920x1080.jpg );"></div>
+			</a>			<div class="card__tile--details bg--white">
+													<a target="" href="https://www.mallofamerica.com/holiday/holiday-rewards">					<h3 class="heading--card-title dsfeatured-card">Donate your Rewards to our Charity Partner Way To Grow </h3>
+					</a>																					<div class="heading--card-description">Way To Grow’s mission is to work closely with parents and communities to help prepare families for back to school.  </div>
+					
+																			</div>
+		</div>
+
+	
+
+									
+			</div> 		</div> 	</section>
+
+
+											
+
+
+<section class="section__body-copy bg--white pad-- lazy__load" id="bodyCopy">
+	<div class="grid__small">
+		<div class="section__body-copy--content lazy__load--child">
+
+			<p><u><strong>Back To School Rewards Terms + Conditions</strong></u><br />
+<br />
+Promotion Dates for Qualifying Mall of America® Purchases August 1, 2021 – September 6, 2021</p>
+
+<p><strong>Redemption / Upload Periods:</strong><br />
+Nickelodeon Universe® may be redeemed from August 23, 2021 – October 17, 2021. (App upload only)<br />
+All other rewards may be redeemed from August 1, 2021 – October 17, 2021. (App upload only)</p>
+
+<p><strong>Blackout Dates</strong><br />
+None</p>
+
+<p><strong>Rewards</strong></p>
+
+<ul>
+	<li>Nickelodeon Universe – One Unlimited Ride Wristband (Unlimited Rewards) </li>
+	<li>Moose Mountain – Two Passes (1,500 Rewards)</li>
+	<li>Rock of Ages – Two Passes (1,500 Rewards) </li>
+	<li>Crayola Experience – One General Admission Ticket (1,500 Rewards) </li>
+	<li>Fair on Four – One Free Blue Horse Pizza (1,500 Rewards) </li>
+	<li>SEA LIFE Minnesota Aquarium – One General Admission Ticket (1,000 Rewards) </li>
+	<li>Sugar Factory – Free Milkshake (Dine-in Only 1,500 Rewards)</li>
+	<li>Donate your Nickelodeon Universe Wristband Rewards to Way to Grow, a local MN Charity Partner. </li>
+</ul>
+
+<p><strong>Rules</strong><br />
+You must be at least 18 years of age to participate in promotion.<br />
+Limit 6 rewards per person during promotion.<br />
+Limit 5 receipts per store, per person, per day.<br />
+<br />
+<strong>Some rewards have limited quantities available.</strong><br />
+Rewards will be distributed for each $150 spent at MOA®.<br />
+All MOA purchases must be made between August 1, 2021 – September 6, 2021<br />
+to qualify.<br />
+Only original store printed receipts accepted. No photocopies.<br />
+Emailed receipts must be submitted via the Mall of America or Ziploop App.</p>
+
+<p>Purchases made on a retailer website or online store do not qualify.<br />
+Must present photo ID at guest services to receive promotional Nickelodeon Universe Any Day Unlimited Ride Wristband.<br />
+Wristbands are not for resale and have no cash value.<br />
+<br />
+<strong>RECEIPTS MUST BE FROM PERSONAL PURCHASES ONLY AT MALL OF AMERICA. MALL OF AMERICA RESERVES THE RIGHT TO REFUSE ANY SUSPICIOUS RECEIPTS.</strong><br />
+<br />
+For Customer Support email RewardsSupport@moa.net.<br />
+Rewards powered by Ziploop <a href="https://www.ziploop.com/terms">Ziploop Terms of Service</a></p>
+
+<p><br />
+<a href="https://www.mallofamerica.com/node/24959">Additional Terms and Conditions</a></p>
+
+
+		</div>
+	</div>
+</section>
+
+
+					</div>
+	
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+    </div>
+</main>
+
+  <div id="section__chat" class="section__chat megamenu--sidebar header__modal-content" aria-label="Chat with MOA" role="region" aria-expanded="false" aria-labelledby="accessible-megamenu-chat">
+	<div class="chat megamenu__inner clearfix">
+
+	<div class="modal__controls">
+		<div class="chat__sidebar--title">
+			<span class="display--none--for-mobile--desk-break">Chat</span>
+			<span class="display--none--for-desktop--desk-break">Chat with us</span>
+		</div>
+		<div class="modal__controls--icons">
+						<a id="chat__sidebar--trigger" class="modal__controls--chat" data-layout="sidebar" href="#"><span class="accessible--hidden">Chat Trigger Sidebar</span><i class="moa-window-sidebar"></i></a>
+						<a id="chat__close" class="disable--trigger" data-target="#section__chat" href="#" aria-label="Close: Chat Window"><span class="accessible--hidden">Close Chat</span><i class="moa-close"></i></a>
+			<a id="chat__min--right" class="chat__min" href="#" aria-label="Minimize: Chat Window"><i class="moa-chevron-right"></i></a>
+			<a id="chat__min--up" class="chat__min" href="#" aria-label="Minimize: Chat Window"><i class="moa-chevron-up"></i></a>
+			<a id="chat__min--down" class="chat__min" href="#" aria-label="Minimize: Chat Window"><i class="moa-chevron-down"></i></a>
+		</div>
+	</div>
+
+	<div id="chat-api">
+				<iframe src="" width="100%" height="auto" frameborder="0"></iframe>
+	</div>
+
+</div></div>
+
+<div id="menu__chat--trigger" class="chat-button-sticky menu__chat--trigger" >
+	<a class="active--trigger" id="accessible-megamenu-chat" href="javascript:void(0)" data-target="#section__chat" aria-label="Chat with Mall of America" aria-controls="section__chat" aria-expanded="false">
+		<svg id="chat-icon" data-name="Chat Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 28"><defs><style>.chat-button{fill:#fff;fill-rule:evenodd;}</style></defs><title>Chat-Icon</title><path class="chat-button" d="M26.85,19.55a14.09,14.09,0,1,0-4.55,5.7L29,26ZM7,16a2,2,0,1,1,2-2A2,2,0,0,1,7,16Zm7,0a2,2,0,1,1,2-2A2,2,0,0,1,14,16Zm7,0a2,2,0,1,1,2-2A2,2,0,0,1,21,16Z"/></svg>
+		<span>Chat</span>
+	</a>
+	<a class="" id="accessible-megamenu-chat-mobile" href="https://chat.satis.fi/?pageID=7978" target="_blank" data-target="#section__chat" aria-label="Chat with Mall of America" aria-controls="section__chat" aria-expanded="false">
+		<svg id="chat-icon" data-name="Chat Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 28"><defs><style>.chat-button{fill:#fff;fill-rule:evenodd;}</style></defs><title>Chat-Icon</title><path class="chat-button" d="M26.85,19.55a14.09,14.09,0,1,0-4.55,5.7L29,26ZM7,16a2,2,0,1,1,2-2A2,2,0,0,1,7,16Zm7,0a2,2,0,1,1,2-2A2,2,0,0,1,14,16Zm7,0a2,2,0,1,1,2-2A2,2,0,0,1,21,16Z"/></svg>
+		<span>Chat</span>
+	</a>
+</div>
+
+<footer role="contentinfo" class="footer valtira-moa">
+	<div class="footer__main">
+		
+		<div class="grid">
+			<div class="grid__item footer__form section__newsletter">
+				<div class="heading--card-subtitle">Newsletter</div>
+				<div class="heading--card-title">Don’t miss out on the latest trends — sign up for our newsletter today!</div>
+																	<div id="mc-form-footer">
+          
+					<div>
+						<!--Begin mc_embed_signup-->
+						<!-- Existing Styles (were inline!) -->
+						<style>
+						#mc_embed_signup h2 {
+							font-weight: bold;
+							padding: 0;
+							margin: 15px 0;
+							font-size: 1.125em;
+							color: #fff;
+						}
+				
+						#mc_embed_signup .mc-field-group {
+							clear: left;
+							position: relative;
+							width: 96%;
+							padding-bottom: 3%;
+							min-height: 50px;
+							margin-top: 2em;
+						}
+				
+						#mc_embed_signup .button {
+							clear: both;
+							background-color: transparent;
+							border: 2px solid #FFFFFF;
+							transition: all 0.23s ease-in-out 0s;
+							color: #FFFFFF;
+							cursor: pointer;
+							display: inline-block;
+							font-size: 15px;
+							font-weight: normal;
+							height: 35px;
+							line-height: 32px;
+							margin: 0 5px 10px 0;
+							padding: 0 22px;
+							text-align: center;
+							text-decoration: none;
+							vertical-align: top;
+							white-space: nowrap;
+							width: auto;
+						}
+						</style>
+						<div id="mc_embed_signup">
+				
+						<div id="mc_embed_signup_scroll">
+							<div id="form-card-1" class="form-card" style="display: block">
+							<div class="mc-field-group">
+								<div class="button emailbutton"><a href="/emails">Sign Up</a></div>
+							</div>
+							</div>
+						</div>
+						</div>
+				
+						<!--End mc_embed_signup-->
+				
+					</div>
+
+				</div>
+			</div>
+			<div class="grid__item footer__menu--wrapper">
+									  <div>
+    <nav role="navigation" aria-labelledby="block-footermenu-menu" id="block-footermenu">
+            
+  <h2 class="visually-hidden" id="block-footermenu-menu">Footer Menu</h2>
+  
+
+        
+    	
+  	  		  			<ul>
+  		
+							<li>
+
+																
+										<a href="/about"  class="dsfooter">About</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/plan-your-trip/hours-directions"  class="dsfooter">Directions</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/guest-services"  class="dsfooter">Guest Services</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/security"  class="dsfooter">Security</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/employment"  class="dsfooter">MOA Employment</a>
+									</li>
+	  						<li>
+
+																
+										<a href="https://tenant-employment.apploi.com/moa"  class="dsfooter">Stores + Restaurant Employment</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/press"  class="dsfooter">Press</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/leasing-development"  class="dsfooter">Leasing</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/corporate-partners"  class="dsfooter">Corporate Partners</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/contact-us"  class="dsfooter">Contact Us</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/terms-privacy"  class="dsfooter">Privacy Policy + Terms of Use</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/dmca"  class="dsfooter">DMCA</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/site-map"  class="dsfooter">Sitemap</a>
+									</li>
+	  						<li>
+
+																
+										<a href="/propertyenhancements"  class="dsfooter">Property Enhancements</a>
+									</li>
+	  		
+		</ul>
+	
+
+
+  
+  </nav>
+
+  </div>
+
+							</div>
+			<div class="grid__item">
+				<img class="moa-footer-logo" src="/themes/custom/moa/images/MOA_Logo_No_Registration_Mark.png" />
+				<div id="mall__address" class="mall__address">
+					<span>Mall of America</span><br/>
+					2131 Lindau Lane<br/>
+					Bloomington, MN 55425<br/>
+					<a>952.883.8800</a>
+				</div>
+				<div id="social_media_icons">
+					<a href="https://www.facebook.com/MallofAmerica/" class="social_media_link">
+						<svg id="facebook_icon" class="social_media_icon" data-name="Facebook Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.79 28.79"><defs></defs><title>MoA-Social-Media-Facebook</title><path class="" d="M28.79,14.38V24.79a3.65,3.65,0,0,1-4,4H4.06a3.69,3.69,0,0,1-4.06-4V4A3.71,3.71,0,0,1,4,0H24.83a3.67,3.67,0,0,1,4,4Zm-10.3,0V10.92H15.87c.08-.52,0-1.22.23-1.31A14,14,0,0,1,18.49,9V5.68c-1.65.15-3.3-.35-4.77.65-1.65,1.12-1.45,2.88-1.47,4.57L10.32,11v3.48h2v8.58h3.64V14.43Z"/></svg>
+					</a>
+					<a href="https://twitter.com/mallofamerica" class="social_media_link">
+						<svg id="twitter_icon" class="social_media_icon" data-name="Twitter Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.81 28.79"><defs></defs><title>MoA-Social-Media-Twitter</title><path class="" d="M14.39,28.79c-3.47,0-6.94,0-10.41,0a3.67,3.67,0,0,1-4-3.95Q0,14.39,0,3.93A3.68,3.68,0,0,1,3.94,0h21A3.64,3.64,0,0,1,28.8,3.88q0,10.5,0,21a3.63,3.63,0,0,1-3.91,3.91C21.39,28.8,17.89,28.79,14.39,28.79ZM10,19.09a8,8,0,0,1-5.2,1.55c.51.31.79.5,1.09.65a11,11,0,0,0,15.76-7.56c.38-1.85.24-3.84,2.37-4.91l-.24-.18-1.94.55L23.08,7a1.27,1.27,0,0,0-.64.28,1.41,1.41,0,0,1-2.16,0,3.84,3.84,0,0,0-6,1.53,13.07,13.07,0,0,0-.48,2.8C10.56,11.4,8,9.78,5.69,7.33c-1,2-.45,3.68,1.08,5.36L5,12.27a4.62,4.62,0,0,0,2.8,3.92l-1.29.08A4.41,4.41,0,0,0,10,19.09Z"/></svg>
+					</a>
+					<a href="https://www.instagram.com/mallofamerica/" class="social_media_link">
+						<svg id="instagram_icon" class="social_media_icon" data-name="Instagram Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.83 28.83"><defs></defs><title>MoA-Social-Media-Instagram</title><path class="" d="M28.83,14.49V24.72a3.75,3.75,0,0,1-4.11,4.11H4.07A3.74,3.74,0,0,1,0,24.76Q0,14.4,0,4A3.71,3.71,0,0,1,4,0H24.76a3.74,3.74,0,0,1,4.07,4.07ZM14.39,23.77c1.58,0,3.17.05,4.76,0a4.81,4.81,0,0,0,4.63-4.49c.12-3.22.12-6.46,0-9.69a4.79,4.79,0,0,0-4.62-4.5C16,5,12.82,5,9.64,5.08A4.83,4.83,0,0,0,5,9.69C5,12.86,5,16,5,19.21a4.87,4.87,0,0,0,4.59,4.55C11.21,23.82,12.8,23.77,14.39,23.77Z"/><path class="" d="M14.43,22.37c-1.53,0-3.06,0-4.58,0a3.4,3.4,0,0,1-3.41-3.27c-.1-3.13-.1-6.28,0-9.42A3.38,3.38,0,0,1,9.83,6.48c3.05-.05,6.11-.05,9.16,0A3.38,3.38,0,0,1,22.4,9.65c.11,3.17.11,6.35,0,9.51A3.4,3.4,0,0,1,19,22.36C17.48,22.41,16,22.37,14.43,22.37Zm4.91-8a4.93,4.93,0,1,0-4.86,4.93A4.95,4.95,0,0,0,19.34,14.4Zm.29-4.06a1.08,1.08,0,0,0,1.12-1.09,1,1,0,0,0-1-1.06,1,1,0,0,0-1.1,1A1.06,1.06,0,0,0,19.63,10.34Z"/><path class="" d="M17.93,14.38a3.52,3.52,0,1,1-7,0,3.52,3.52,0,0,1,7,0Z"/></svg>
+					</a>
+					<a href="https://www.mallofamerica.com/wechat" class="social_media_link">
+						<svg id="wechat_icon" class="social_media_icon" data-name="WeChat Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.83 28.83"><defs></defs><title>MoA-Social-Media-WeChat</title><path class="social-icon-stroke" d="M14.09,11.12a1,1,0,1,0-1-1A1,1,0,0,0,14.09,11.12Z"/><path class="" d="M8.73,9.05a1,1,0,1,0,1,1A1,1,0,0,0,8.73,9.05Z"/><circle class="" cx="16.67" cy="15.46" r="0.9"/><circle class="" cx="21.13" cy="15.46" r="0.9"/><path class="" d="M28.83,4.08A3.74,3.74,0,0,0,24.76,0H4A3.71,3.71,0,0,0,0,4Q0,14.4,0,24.76a3.74,3.74,0,0,0,4.06,4.07H24.72a3.75,3.75,0,0,0,4.11-4.11V4.08ZM11.38,18.83a9.52,9.52,0,0,1-2.7-.39.61.61,0,0,0-.44,0l-2,1.12a.22.22,0,0,1-.32-.24l.38-1.89a.18.18,0,0,0-.07-.19,6.29,6.29,0,0,1-2.95-5.15c0-3.69,3.63-6.69,8.11-6.69,4.07,0,7.44,2.48,8,5.7l-.52,0c-3.94,0-7.15,2.71-7.15,6A5.21,5.21,0,0,0,12,18.8C11.79,18.82,11.59,18.83,11.38,18.83ZM23.3,21.34a.45.45,0,0,0-.17.49l.27,1.35a.16.16,0,0,1-.23.18l-1.71-.88a.66.66,0,0,0-.43,0,7.92,7.92,0,0,1-2.15.3c-3.69,0-6.68-2.49-6.68-5.57s3-5.57,6.68-5.57,6.68,2.5,6.68,5.57A5.24,5.24,0,0,1,23.3,21.34Z"/></svg>
+					</a>
+					<a href="https://www.youtube.com/user/OfficialMOA" class="social_media_link">
+						<svg id="youtube_icon" class="social_media_icon" data-name="Youtube Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.83 28.83"><defs></defs><title>MoA-Social-Media-You-Tube</title><path class="" d="M17.69,17.21a.88.88,0,0,0-1.06-.48,1.17,1.17,0,0,0-.59.38,1.34,1.34,0,0,0-.11.17V14.77h-1V22.4h1V22a.91.91,0,0,0,.1.1,1.12,1.12,0,0,0,.87.4.82.82,0,0,0,.87-.61,1.69,1.69,0,0,0,.09-.59v-3.2A2,2,0,0,0,17.69,17.21Zm-.89,3.93a.47.47,0,0,1,0,.17.34.34,0,0,1-.45.28.67.67,0,0,1-.36-.22l0-.05h0V17.85h0a.24.24,0,0,1,.07-.1.51.51,0,0,1,.42-.16.34.34,0,0,1,.31.21.88.88,0,0,1,.07.32c0,1,0,2,0,3Z"/><path class="" d="M12.86,21a.2.2,0,0,1,0,.11,1.1,1.1,0,0,1-.5.38.25.25,0,0,1-.36-.2A1.62,1.62,0,0,1,12,21c0-1.38,0-4.22,0-4.26h-1v4.74a1.35,1.35,0,0,0,.11.59.6.6,0,0,0,.46.37,1,1,0,0,0,.48,0,1.87,1.87,0,0,0,.79-.57l.08-.08v.62h1V16.77h-1Z"/><path class="" d="M14,10.57a.44.44,0,0,0,.43-.44V7.08A.44.44,0,0,0,14,6.64a.44.44,0,0,0-.44.44v3.05A.44.44,0,0,0,14,10.57Z"/><polygon class="" points="10.94 14.77 7.39 14.77 7.39 15.87 8.59 15.87 8.59 22.4 9.74 22.4 9.74 15.86 10.94 15.86 10.94 14.77"/><path class="" d="M21.67,19.71s0-1,0-1.42a2.69,2.69,0,0,0-.05-.57,1.25,1.25,0,0,0-.85-1,2.14,2.14,0,0,0-.44-.08,1.48,1.48,0,0,0-1.28.5,1.66,1.66,0,0,0-.4,1.17c0,.83,0,1.67,0,2.51a3.29,3.29,0,0,0,.07.63,1.36,1.36,0,0,0,.78,1,1.72,1.72,0,0,0,1,.1,1.27,1.27,0,0,0,1.08-.89,5.33,5.33,0,0,0,.12-1.24H20.62v.72a.46.46,0,1,1-.91,0V19.71Zm-2-1.66a.46.46,0,1,1,.91,0v.79h-.91Z"/><path class="" d="M28.83,4.08A3.74,3.74,0,0,0,24.76,0H4A3.71,3.71,0,0,0,0,4Q0,14.4,0,24.76a3.74,3.74,0,0,0,4.06,4.07H24.72a3.75,3.75,0,0,0,4.11-4.11V4.08ZM16.39,5.77h1v4.32a.88.88,0,0,0,0,.17.24.24,0,0,0,.33.21,1.14,1.14,0,0,0,.5-.39.2.2,0,0,0,0-.11V5.77h1.05v5.67H18.3v-.61c-.12.11-.21.22-.32.31a1.45,1.45,0,0,1-.67.35.66.66,0,0,1-.85-.45,1.55,1.55,0,0,1-.07-.43ZM14,5.63a1.5,1.5,0,0,1,1.5,1.5v2.94a1.5,1.5,0,1,1-3,0V7.13A1.5,1.5,0,0,1,14,5.63ZM10,3.77s.47,2,.7,3h0l.71-3h1.19l-1.33,4.4a.77.77,0,0,0,0,.15v3.11h-1.1V8.32a.77.77,0,0,0,0-.15L8.77,3.77ZM23.09,21.83a2.56,2.56,0,0,1-2.5,2.56q-6,.12-12,0a2.56,2.56,0,0,1-2.5-2.56V15.57A2.56,2.56,0,0,1,8.57,13q6-.12,12,0a2.56,2.56,0,0,1,2.5,2.56Z"/></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer__copyright">
+		<a href="http://www.americandream.com" target="_blank"><img class="footer__copyright--logo" src="/themes/custom/moa/images/american-dream_logo-white.svg" alt="American Dream Logo"/></a>
+		<div class="grid__narrow">
+						<span id="site__copyright" class="copyright__text">&copy; 2021 MOAC MALL HOLDINGS LLC</span>
+		</div>
+	</div>
+
+
+		
+				
+					
+
+	<div class="cta-bar bg--green " id=ctaScroll--top>
+		<div class="cta-link">BACK TO TOP</div>
+		<div class="cta-arrow">
+			<i class="moa-chevron-up" aria-hidden="true"></i>
+		</div>
+	</div>
+</footer>
+
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/197","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","simple_popup_blocks":{"settings":[{"identifier":"paragraph--type--moa-html-popup","uid":"flash_sales","type":"1","css_selector":"0","layout":"4","visit_counts":"0","overlay":"1","trigger_method":"0","trigger_selector":"#custom-css-id","enable_escape":"1","delay":"0","minimize":"0","close":"1","use_time_frequency":"1","time_frequency":"86400","show_minimized_button":"0","width":"400","cookie_expiry":"1","status":"1","trigger_width":""}]},"user":{"uid":0,"permissionsHash":"cfebe219dddc894f6e59131d9ab4c38a18c1ba509745c4479999ed8646498478"}}</script>
+<script src="/sites/default/files/js/js_yFO8y-KIOuHKU72Gx_2A-uLLV1CrpPCx4Zq6xp-Riis.js"></script>
+<script src="/themes/custom/moa/dist/js/library.min.js?v=8.7.5"></script>
+<script src="/themes/custom/moa/dist/js/three.min.js?v=8.7.5"></script>
+<script src="/themes/custom/moa/dist/js/panolens.min.js?v=8.7.5"></script>
+<script src="/themes/custom/moa/dist/js/moment.min.js?v=8.7.5"></script>
+<script src="/themes/custom/moa/dist/js/moment-timezone.min.js?v=8.7.5"></script>
+<script src="/themes/custom/moa/dist/js/compiled.min.js?v=8.7.5"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"391086c756","applicationID":"278981221","transactionName":"YVNVYRFWDBIFW0VRXlgZdlYXXg0PS3xDTUFXWmtbDFMHPSdXX0xDWVpbUBFrLA4AXWdRVEF1WFsXRQ0NCF1DFQ9AX1JC","queueTime":0,"applicationTime":237,"atts":"TRRWF1lMHxw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
